@@ -1,0 +1,29 @@
+body{
+	background-color: #dbdbdb;
+}
+
+.container{
+	width: 65%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #65737e;
+	padding: 4%;
+}
+
+.container h1{
+	color: #ba5e49;
+}
+
+#elementos{
+	padding: 2%;
+}
+
+#pokemons .elemento{
+	margin: 10px;
+	border: 2px solid #c0c5ce;
+	display: block;
+	padding: 10px;
+	text-align:left;
+	position: relative;
+	margin: 2%;
+}
