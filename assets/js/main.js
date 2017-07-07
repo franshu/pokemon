@@ -2,23 +2,30 @@
 $(document).ready(function() {
 	/* ajax que pide data de pokemones */
 	$.ajax({
-		url: 'http://pokeapi.co/media/img/',
+		url: 'http://pokeapi.co/api/v2/pokemon/',
 		type: 'GET',
 		dataType: 'json',
-		data: {"limit": '811'},
+		data: {"limit":'811'},
 	})
-	.done(function() {
-		console.log("success");
+
+/*hace la funcion para imprimir pokemon*/
+.done(function(p) {
+	console.log("p");
+	p.results.forEach(function(elemento,imagen){
+	var pik = imagen+1;
+	$(".poke").append("<div class='col-md-3 pokemon'><img src='http://pokeapi.co/media/img/" + pik +".png'>" + elemento.name + "</div>");
 	})
+})
+	
 	.fail(function() {
 		console.log("error");
 	})
 	.always(function() {
 		console.log("complete");
 	});
+})
 
-
-	var dibujarGifs = function(data){
+/*	var dibujarGifs = function(data){
 		//var gif = "";
 		//var url = "";
 		data.forEach(function(element){
@@ -27,12 +34,12 @@ $(document).ready(function() {
 		})
 	}	
 
-/* estructura que muestra en el html los datos solicitados */
+/* estructura que muestra en el html los datos solicitados 
 var armarTemplate = function(gif,url){
 		var t= "<div class='pokemon'><img src'" + gif + "'/><a href='" + url + "'>Ver más</a></div>"
 		return t;
 	}
-
+*/
 
 /* ajax que pide img de pokemones 
 $.ajax({
@@ -80,3 +87,14 @@ $("#buscar-gif").click(function(event){
 	})
 });
 */
+
+
+
+
+
+
+
+
+
+
+
