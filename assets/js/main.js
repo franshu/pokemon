@@ -15,8 +15,7 @@ $(document).ready(function() {
 	var pik = imagen+1;
 	$(".poke").append("<div class='col-md-3 pokemon'><img src='http://pokeapi.co/media/img/" + pik +".png'>" + elemento.name + "</div>");
 	})
-})
-	
+})	
 	.fail(function() {
 		console.log("error");
 	})
@@ -25,7 +24,8 @@ $(document).ready(function() {
 	});
 })
 
-/*	var dibujarGifs = function(data){
+/*	primera idea
+var dibujarGifs = function(data){
 		//var gif = "";
 		//var url = "";
 		data.forEach(function(element){
