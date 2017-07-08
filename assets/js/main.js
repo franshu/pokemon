@@ -8,7 +8,7 @@ $(document).ready(function() {
 		data: {"limit":'811'},
 	})
 
-/*hace la funcion para imprimir pokemon*/
+/*hace la funcion para imprimir name and img*/
 .done(function(p) {
 	console.log("p");
 	p.results.forEach(function(elemento,imagen){
