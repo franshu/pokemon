@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pokedex</title>
-     <!-- Pokemones falta texto-->
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
 <!-- Pokemones page -->
@@ -20,10 +21,10 @@
             </div>
             <!--buscador-->
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <div class="input-group input-group-sm">
                         <span class="input-group-addon glyphicon glyphicon-search" id="sizing-addon3"></span>
-                        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+                        <input type="text" class="form-control" placeholder="¿Cuál es tú Pokémon?" aria-describedby="sizing-addon3">
                     </div>
                 </div>  
             </div>
@@ -44,27 +45,34 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title"></h4>
                 </div>
+                
                 <div class="modal-body">
-                    <img src="" />
-                    <h2>Descripción</h2>
-                    <div class="altura">
-                        Altura:
-                        <span></span>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="" />
+                        </div>
+
+                        <div class="col-md-6">
+                            <h2>Descripción</h2>
+                            <div class="altura">
+                                Altura:
+                                <span></span>
+                            </div>
+                            <div class="peso">
+                                Peso:
+                                <span></span>
+                            </div>
+                            <div class="tipo">
+                                Tipo:
+                                <span></span>
+                            </div>
+                            <div class="habilidades">
+                                Habilidades:
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>  
                     </div>
-                    <div class="peso">
-                        Peso
-                        <span></span>
-                    </div>
-                    <div class="tipo">
-                        Tipo
-                        <span></span>
-                    </div>
-                    <div class="habilidades">
-                        Habilidades
-                        <ul>
-                        </ul>
-                    </div>
-                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
